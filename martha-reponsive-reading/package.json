@@ -1,0 +1,24 @@
+{
+  "name": "martha-responsive-reading",
+  "version": "1.0.0",
+  "description": "Responsive Reading API with Graphql",
+  "main": "index.js",
+  "repository": "https://github.com/funnystyle/martha-responsive-reading",
+  "author": "funnystyle<esero082@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^1.18.6"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js",
+    "dev": "nodemon --exec babel-node index.js"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "graphql-yoga": "^1.17.1"
+  }
+}

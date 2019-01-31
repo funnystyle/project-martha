@@ -1,0 +1,23 @@
+# 교도문
+type Responsive {
+  id: Int!
+  title: String!
+  contents: [Reading]!
+}
+
+# 교독문의 각 줄
+type Reading {
+  speaker: String!
+  text: String!
+  from: String
+}
+
+type Query {
+  responsives(query: String): [Responsive]
+  responsive(id: Int!): Responsive
+}
+
+# type Mutation {
+#   addResponsive(name: String!, score: Int!): Responsive!
+#   deleteResponsive(id: Int!): Boolean!
+# }
