@@ -15,44 +15,87 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
     />
     <style>
-      container {
-        width: 100vw;
+      * {
+        font-family: Pretendard, sans-serif;
+      }
+      .container {
+        width: calc(100% - 2rem);
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         background-color: #fcf6f5;
+        flex-direction: column;
+        padding: 0 1rem;
+        /* min-width: 15rem; */
       }
-      /* .center-middle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      .center-middle {
+        justify-content: center;
+        align-items: center;
         text-align: center;
-      } */
-      * {
-        font-family: "Pretendard", sans-serif;
+        text-align: center;
+        border-radius: 1rem;
+        background-color: #99001133;
+        padding: 2rem;
       }
       h1 {
+        font-family: Pretendard;
         color: #990011;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 700;
-        margin-bottom: 0.8rem;
+        margin-bottom: 1.5rem;
       }
       h2 {
+        font-family: Pretendard;
         color: #99001199;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 500;
+        margin-bottom: 2.8rem;
+        line-height: 1.5;
+      }
+      .description {
+        font-family: Pretendard;
+        /* max-width: 30rem; */
+        color: #990011;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        line-height: 1.5;
+      }
+      /* .content {
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: #99001122;
+      } */
+      .bible {
+        font-family: Pretendard;
+
+        color: #990011cc;
+        font-size: 0.8rem;
+        /* margin-bottom: 1.5rem; */
+        line-height: 1.5;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <container>
-      <div class="center-middle">
-        <h1>Project Martha</h1>
-        <h2>with Funnystyle</h2>
+    <div class="container">
+      <!-- <div class="center-middle"> -->
+      <h1>Project Martha</h1>
+      <!-- <h2>with Funnystyle</h2> -->
+      <div class="description">
+        Automation System <br />for All Marthas in the World.
       </div>
-    </container>
+      <div class="content">
+        <div class="bible">
+          But Martha was distracted by all the preparations that had to be made.
+          She came to him and asked, <br />
+          "Lord, don't you care that my sister has left me to do the work by
+          myself? Tell her to help me!"<br />
+          (Luke 10:40)
+        </div>
+      </div>
+    </div>
   </body>
 </html>
